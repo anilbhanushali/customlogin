@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="dronahq.js"></script>
+</head>
+<body>
+    <button onclick="gotoLogin">Go to Login</button>
+    <script>
+        function gotoLogin(){
+            var ref = cordova.InAppBrowser.open('https://anilbhanushali.github.io/customlogin/index.html', '_blank', 'location=yes');
+        }
+        document.addEventListener('deviceready', function(){
+            alert(device.uuid);
+        }, false)
+    </script>
+</body>
+</html>
